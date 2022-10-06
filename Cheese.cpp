@@ -10,7 +10,7 @@ void SetColor(int text, int background)
 	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hStdOut, (WORD)((background << 4) | text));
 }
-int n;
+int n;// какое то Git для проверки
 void main()
 {
 	cin >> n;
@@ -19,6 +19,7 @@ void main()
 	{
 		for (size_t j = 0; j <= n; j++)
 		{
+			cout << "опять вот это";
 			if (i == 0 && j == 0)cout << (char)Corner_UL;
 			else if (i == 0 && j == n)cout << (char)Corner_UR;
 			else if (i == n && j == 0)cout << (char)Corner_DL;
